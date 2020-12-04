@@ -20,10 +20,10 @@ ps: $(name-of-the-file).dvi
 
 dvi: $(name-of-the-file).tex 
 	@echo "Running latex and biber"
-	latex $(name-of-the-file).tex
-	biber $(name-of-the-file)
-	latex $(name-of-the-file).tex
-	latex $(name-of-the-file).tex
+	latex  $(name-of-the-file).tex
+	bibtex $(name-of-the-file)
+	latex  $(name-of-the-file).tex
+	latex  $(name-of-the-file).tex
 
 view:
 	evince $(name-of-the-file).pdf &
