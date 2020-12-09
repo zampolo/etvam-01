@@ -53,7 +53,7 @@
 %
 \begin{abstract}
 	% context
-	The development of the first eye-tracking systems can be traced back to the early years of the 20th century, when researchers were trying to uderstand the behavior of eye movements during reading. Psychologists came right after, mostly trying to find out connections between eye movements and cognitive states. Eye-trackers are becoming a common device with a large variety of models, prices and quality, whose selection depends on the intended application. Presently, many areas benefit from eye-tracking, like neuromarketing, design, human-computer interfacing, visual attention studies, and emotion modeling. Crowdsoucing is another field which would be greatly boosted with the aid of such a tool.
+	The development of the first eye-tracking systems can be traced back to the early years of the 20th century, when researchers were trying to understand the behavior of eye movements during reading. Psychologists came right after, mostly trying to learn about connections between eye movements and cognitive states. Eye-trackers are becoming a common device with a large variety of models, prices and quality, whose selection depends on the intended application. Presently, many areas benefit from eye-tracking, like neuromarketing, design, human-computer interfacing, visual attention studies, and emotion modeling. Crowdsoucing is another field which would be greatly boosted with the aid of such a tool.
 
 	% gap
 	 However, to be feasible, the data acquisition apparatus for crowdsourcing should be inexpensive. And, as a rule, point of regard (PoR) estimations in low-cost eye-trackers suffer from poor accuracy. % the user image is simple, as expected, based on webcams without infra-red illumination/.
@@ -62,7 +62,7 @@
 	This paper presents a technique to improve the quality of low-cost eye-trackers by using visual attention models. Basically, the visual attention model filters noisy gaze estimations and at the same time corrects PoRs to the most salient location in a certain neighborhood.
 	
 	% methodology
-	The technique performance is assessed experimentaly, where we use two eye-trackers in parallel to collect data: one is a comercial equipment with nominal accuracy of XX, assumed as a ground-truth provider, whereas the other is a low-cost webcam-based software eye-tracker (measured acc of XXX). We compare original and corrected low-cost PoRs against reference PoR by using heatmaps and scanpath metrics.
+	The technique performance is assessed experimentally, where we use two eye-trackers in parallel to collect data: one is a table-mounted equipment with nominal accuracy of XX, assumed as a ground-truth provider, whereas the other is a low-cost webcam-based software eye-tracker (measured acc of XXX). We compare original and corrected low-cost PoRs against reference PoR by using heatmaps and scanpath metrics.
 
 	% results and conclusions
 	Our results show an improvement... (do not forget the drawbacks).
@@ -76,7 +76,40 @@
 \end{keywords}
 %
 \section{Introduction}
-\label{sec:intro}
+\label{sec:int}
+% some context ==> literature review, related works !!
+% - eyetracking systems: history (very short), approaches, issues, areas of application
+Eye-tracking systems are designed to record eye movements, with the purpose of a) studying the movements themselves or b) estimating gaze points. Early interest in this field was related to reading studies, but soon psychologists came into play and started using eye-trackers to deeper the knowledge about the connections between eye movements and cognitive states. First eye-trackers also allowed investigations on the visual psychophysics and visual attention. 
+
+Eye-tracking techniques range from early contact lens-based devices to current video-based equipment. Among the latter, variations can be found as head-mounted or table-mounted, and with infra-red or visible light illumination.
+
+Currently, eye-tracking supports many areas as neuromarketing, medicine, emotion modeling, visual attention studies, human-computer interface design, and neuroscience.
+
+It is important to note that the concepts (and all the controversy) of overt (coincident with foveal vision) and covert (attention deployed on the peripheral vision) attention, as well as those of top-down (cognitive-directed) and bottom-up (scene saliency-directed) attention owe a great deal to eye-tracking data obtained in numerous experiments conducted through the years.
+
+The very first successful attention model is proposed by Itti and Koch in 2000 [ref], aimed to model visual seach in complex scenes. Explain more about the model (what are the main principles). The following advancements in this field change somehow or include new aspects of visual attention to Itti and Koch's, like... . Recent visual attention models use deep learning techniques to improve the performance.
+
+% - crowdsourcing: what is, pros and cons
+% gap
+% - can we have a low-cost eye-tracker suitable for crowdsourcing?
+% proposal
+% - short statement: improve low-cost software eye-trackers PoR estimation by using visual attention models
+% - some lines about visual attention models (?)
+% - methodology (?)
+% organisation of the paper
+
+
+\section{Methods}
+\label{sec:met}
+% how we did it
+
+\section{Results}
+\label{sec:res}
+% what is obtained
+
+\section{Discussion}
+\label{sec:dis}
+% comments about the results
 
 
 % Below is an example of how to insert images. Delete the ``\vspace'' line,
@@ -121,7 +154,7 @@
 \vfill\pagebreak
 
 \section{REFERENCES}
-\label{sec:refs}
+\label{sec:ref}
 % References should be produced using the bibtex program from suitable
 % BiBTeX files (here: strings, refs, manuals). The IEEEbib.bst bibliography
 % style file from IEEE produces unsorted bibliography list.
